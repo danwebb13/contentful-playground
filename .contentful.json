@@ -1,6 +1,6 @@
 {
   "spaceId": "3ajf86f6imx2",
-  "accessToken": "37ef4582d66a247ba999453501b765b61d25701e78a142bb4df5a6b5015d88a4",
+  "accessToken": "8d9b2a22d0af8ca6def7aa66822f9c3e425af0a47b652b3cd2cac253b4d04c81",
   "environment": "master",
-  "host": "preview.contentful.com"
+  "host": "cdn.contentful.com"
 }
