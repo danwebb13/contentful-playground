@@ -7,8 +7,9 @@ try {
 
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
-  spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
-  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+  spaceId: contentfulConfig.spaceId,
+  accessToken: contentfulConfig.accessToken,
+  environment: 'master'
 }
 
 const { spaceId, accessToken } = contentfulConfig
@@ -20,7 +21,6 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
-  pathPrefix: '/gatsby-contentful-starter',
   siteMetadata: {
     title: `Moixa`,
     siteUrl: `https://moixa.com`,

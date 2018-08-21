@@ -1,11 +1,8 @@
 {
-  "name": "gatsby-contentful-starter",
-  "description": "Starter Contentful Gatsby Blog",
+  "name": "contentful-playground",
+  "description": "Contenful CMS & Gatsby Playground for DWI Ltd",
   "version": "1.0.0",
-  "author": "Stefan Judis <stefanjudis@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
-  },
+  "author": "Dan Webb <dan@dan-webb.com>",
   "dependencies": {
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
@@ -28,7 +25,6 @@
     "rimraf": "^2.6.2",
     "yargs-parser": "^10.1.0"
   },
-  "homepage": "https://github.com/contentful-userland/gatsby-contentful-starter#readme",
   "keywords": [
     "gatsby",
     "contentful"
@@ -37,7 +33,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful-userland/gatsby-contentful-starter.git"
+    "url": "git+https://github.com/danwebb13/contentful-playground"
   },
   "scripts": {
     "dev": "gatsby develop",
@@ -45,11 +41,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build git push origin master",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js",
     "postinstall": "node ./bin/hello.js",
     "setup": "node ./bin/setup.js",
-    "heroku-postbuild": "gatsby build",
     "cleanup-repository": "rimraf bin contentful && npm uninstall contentful-import chalk inquirer rimraf "
   }
 }
