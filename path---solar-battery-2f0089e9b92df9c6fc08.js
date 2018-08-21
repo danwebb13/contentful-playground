@@ -1,0 +1,2 @@
+webpackJsonp([38034126742975],{368:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Moixa"}},contentfulBasicPage:{title:"Solar Battery",metaTitle:"Solar Battery Example Title",slug:"solar-battery",sections:[{__typename:"ContentfulYoutubeVideo",id:"c7sljkMsEtGqa6SYosYOQe4",title:"Godard Video",youtubeVideoUrl:"https://www.youtube.com/watch?v=a-BGojBQLEE"},{__typename:"ContentfulPageSection",id:"c4SXDMS7ZvGgEI88oseEMOk",title:"What's under the bonnet"}]}},pathContext:{slug:"solar-battery"}}}});
+//# sourceMappingURL=path---solar-battery-2f0089e9b92df9c6fc08.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([120678318354],{362:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Moixa"}},contentfulBasicPage:{title:"About Us",metaTitle:null,slug:"about-us",sections:[{__typename:"ContentfulPageSection",id:"c4SXDMS7ZvGgEI88oseEMOk",title:"What's under the bonnet"}]}},pathContext:{slug:"about-us"}}}});
+//# sourceMappingURL=path---about-us-fef58268baebfd6f49a2.js.map
