@@ -1,12 +1,14 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const pages = get(this, 'props.data.allContentfulBasicPage.edges')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
@@ -25,6 +27,16 @@ class RootIndex extends React.Component {
               )
             })}
           </ul>
+
+          <ul className="article-list">
+            {pages.map(({ node }) => {
+              return (
+                <li key={node.slug}>
+                  <Link to={`/${node.slug}`}>{node.title}</Link>
+                </li>
+              )
+            })}
+          </ul>          
         </div>
       </div>
     )
@@ -35,6 +47,14 @@ export default RootIndex
 
 export const pageQuery = graphql`
   query HomeQuery {
+    allContentfulBasicPage {
+      edges {
+        node {
+          title
+          slug
+        }
+      }
+    }
     allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {

@@ -21,6 +21,11 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   pathPrefix: '/gatsby-contentful-starter',
+  siteMetadata: {
+    title: `Moixa`,
+    siteUrl: `https://moixa.com`,
+    description: `Smart Battery for Solar`,
+  },
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
