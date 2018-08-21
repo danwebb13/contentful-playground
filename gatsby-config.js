@@ -9,7 +9,7 @@ try {
 contentfulConfig = {
   spaceId: contentfulConfig.spaceId,
   accessToken: contentfulConfig.accessToken,
-  environment: 'master'
+  environment: 'staging'
 }
 
 const { spaceId, accessToken } = contentfulConfig
